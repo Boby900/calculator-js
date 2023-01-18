@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse-Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon"
+        href="https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/611e17ec949adb702e521eb5_4Em9cry00PqgpP_mCCrgJ_OmdqSMCzQVgEYtfvDrfM3eBL3zBMvBZ4TxXHUVdgXWiwySmgYSFXmKx86BS10Yk2fVQhKTFOXTYlxKPsII1HBYjkvQ3d14PFsOfFbk51boJMEI6Ns7.png"
+        type="icon/x-image">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1 id="heading-h1">Browse-Calculator</h1>
+        </section>
+    </header>
+    <main>
+        <aside class="aside-class">Your answer is -:<span id="span"></span></aside>
+        <div id="label-1">
+            <label for="first-num">First Number</label>
+            <input type="number" id="first-num"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                autofocus="on" name="first-num" placeholder="input number" class="input-style" minlength="2"
+                maxlength="9"><br>
+        </div>
+        <div id="label-2">
+            <label for="second-num">Second Number</label>
+            <input type="number" id="second-num"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                placeholder="input number" name="second-num" class="input-style" minlength="2" maxlength="9"><br>
+        </div>
+        <p id="paragraph">Choose from the below options</p>
+        <div class="main-div">
+            <div class="first">+</div>
+            <div class="second">-</div>
+            <div class="third">*</div>
+            <div class="fourth">/</div>
+        </div>
+        <button>Submit</button>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
