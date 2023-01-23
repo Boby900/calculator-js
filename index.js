@@ -28,7 +28,7 @@ substraction.addEventListener('click',function(){
 })
 
 
-mulitply.addEventListener('click',function(){
+multiply.addEventListener('click',function(){
     let x=type_convert(firstNum.value);
     let y=type_convert(secondNum.value);
     let ans=x*y;
